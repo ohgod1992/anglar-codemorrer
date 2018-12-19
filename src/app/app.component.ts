@@ -3,7 +3,7 @@ import * as CodeMirror from 'codemirror';
 import 'codemirror/addon/hint/show-hint.js';
 import 'codemirror/addon/hint/sql-hint.js';
 import 'codemirror/mode/sql/sql';
-
+import 'codemirror/addon/selection/active-line'
 const defaults = {
   markdown:
     '# Heading\n\nSome **bold** and _italic_ text\nBy [Scott Cooper](https://github.com/scttcper)',
@@ -21,12 +21,12 @@ const hello: string = 'world';`,
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  readOnly = false;
   mode = 'text/x-mysql';
   options: any = {
     lineNumbers: true,
     mode: this.mode,
-    theme: 'material',
+    theme: 'default',
+    styleActiveLine:true,
     extraKeys: {
       'Ctrl-Q': 'autocomplete',
     }
