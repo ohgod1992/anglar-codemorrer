@@ -1,0 +1,34 @@
+<!-- <div class="container mt-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-12 mb-3">
+
+      <div class="ngx-codemirror mb-2">
+        <ngx-codemirror
+          [options]="options"
+          [ngModel]="defaults[mode]"
+          [autoFocus]="true"
+          (ngModelChange)="handleChange($event)"
+        ></ngx-codemirror>
+      </div>
+
+      <form class="form-inline" style="display:none">
+        <select  class="form-control mr-1 mb-1" name="state" [(ngModel)]="mode" (ngModelChange)="changeMode()">
+          <option value="markdown">Markdown</option>
+          <option value="text/x-mysql">x-mysql</option>
+        </select>
+        <div class="btn-group-toggle mb-1 mr-1">
+          <button class="btn btn-light" (click)="clear()">Clear</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div> -->
+
+<ngx-codemirror
+[options]="options"
+autoFocus = true
+[ngModel]="defaults[mode]"
+></ngx-codemirror>
+
+
