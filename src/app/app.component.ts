@@ -28,7 +28,7 @@ export class AppComponent {
     theme: 'default',
     styleActiveLine:true,
     extraKeys: {
-      'Ctrl-Q': 'autocomplete',
+      'Tab': 'autocomplete',
     }
   };
   defaults = defaults;
